@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "Exit Youtube Playlist",
+  "version": "1.0",
+  "description": "Click a button to get out of a playlist",
+  "content_scripts": [
+    {
+      "js": ["content.js"],
+      "matches": [
+        "https://youtube.com/*",
+		"https://www.youtube.com/*"
+      ]
+    }
+  ],
+  "permissions": ["activeTab"]
+}
