@@ -2,15 +2,18 @@
   "manifest_version": 3,
   "name": "Exit Youtube Playlist",
   "version": "1.0",
-  "description": "Click a button to get out of a playlist",
+  "description": "Click a button to get out of a playlist and watch a single video",
   "content_scripts": [
     {
       "js": ["content.js"],
       "matches": [
         "https://youtube.com/*",
-		"https://www.youtube.com/*"
+		"https://*.youtube.com/*"
       ]
     }
   ],
-  "permissions": ["activeTab"]
+  "permissions": ["activeTab"],
+  "icons": {
+    "128": "icon_128.png"
+  }
 }
